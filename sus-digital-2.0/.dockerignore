@@ -1,0 +1,16 @@
+# Dependências, que serão instaladas dentro do container
+node_modules
+
+# Pasta de build, que será gerada dentro do container
+dist
+
+# Arquivos do Docker
+Dockerfile
+.dockerignore
+
+# Arquivos do Git
+.git
+.gitignore
+
+# Variáveis de ambiente locais (se você tiver)
+.env*

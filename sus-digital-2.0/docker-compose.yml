@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  # Nome do nosso serviço
+  sus-digital-app:
+    # Diz ao Docker Compose para construir a imagem a partir do Dockerfile na pasta atual (.)
+    build: .
+    # Nome da imagem que será criada
+    image: sus-digital-react
+    # Nome do container quando estiver em execução
+    container_name: sus-digital_container
+    # Mapeia a porta 8080 do seu computador para a porta 80 do container
+    # Você poderá acessar o site em http://localhost:8080
+    ports:
+      - "8080:80"
